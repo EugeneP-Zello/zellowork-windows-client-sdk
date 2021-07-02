@@ -153,7 +153,7 @@ namespace MultiClientSample
                 ptt.ContactListChanged += new ZelloPTTLib.IZelloClientEvents_ContactListChangedEventHandler(ptt_ContactListChanged);
 				// Configure Loudtalks Mesh network parameters
                 ptt.Network.NetworkName = sZelloNetworkName;
-				ptt.Network.LoginServer = sZelloNetworkName + ".loudtalks.net";
+				ptt.Network.LoginServer = "login." + sZelloNetworkName + ".loudtalks.net";
                 ptt.Network.WebServer = "http://" + sZelloNetworkName + ".zellowork.com";
                 ptt.Network.EnableTls("tls.zellowork.com");
 				// Customize using embedded oem.config

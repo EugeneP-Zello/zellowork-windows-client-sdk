@@ -43,6 +43,7 @@
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.audioOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportAProblemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,6 @@
             this.comboUsername = new System.Windows.Forms.ComboBox();
             this.labelError = new System.Windows.Forms.Label();
             this.buttonSignIn = new System.Windows.Forms.Button();
-            this.audioOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,21 +158,28 @@
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.changePasswordToolStripMenuItem.Text = "Change password...";
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(191, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(174, 6);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.optionsToolStripMenuItem.Text = "Options...";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
+            // 
+            // audioOptionsToolStripMenuItem
+            // 
+            this.audioOptionsToolStripMenuItem.Name = "audioOptionsToolStripMenuItem";
+            this.audioOptionsToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.audioOptionsToolStripMenuItem.Text = "Audio options...";
+            this.audioOptionsToolStripMenuItem.Click += new System.EventHandler(this.audioOptionsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -223,7 +230,7 @@
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(180, 21);
             this.textPassword.TabIndex = 7;
-            this.textPassword.Text = "test";
+            this.textPassword.Text = "123456";
             this.textPassword.UseSystemPasswordChar = true;
             this.textPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textPassword_KeyDown);
             // 
@@ -242,20 +249,16 @@
             this.comboUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboUsername.FormattingEnabled = true;
             this.comboUsername.Items.AddRange(new object[] {
-            "test1",
-            "test2",
-            "test3",
-            "test4",
-            "test5",
-            "test6",
-            "test7"});
+            "admin",
+            "disp",
+            "zukabra"});
             this.comboUsername.Location = new System.Drawing.Point(12, 55);
             this.comboUsername.MaxDropDownItems = 100;
             this.comboUsername.MaxLength = 128;
             this.comboUsername.Name = "comboUsername";
             this.comboUsername.Size = new System.Drawing.Size(180, 21);
             this.comboUsername.TabIndex = 6;
-            this.comboUsername.Text = "test3";
+            this.comboUsername.Text = "disp";
             this.comboUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboUsername_KeyDown);
             // 
             // labelError
@@ -279,13 +282,6 @@
             this.buttonSignIn.Text = "Sign in";
             this.buttonSignIn.UseVisualStyleBackColor = true;
             this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
-            // 
-            // audioOptionsToolStripMenuItem
-            // 
-            this.audioOptionsToolStripMenuItem.Name = "audioOptionsToolStripMenuItem";
-            this.audioOptionsToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.audioOptionsToolStripMenuItem.Text = "Audio options...";
-            this.audioOptionsToolStripMenuItem.Click += new System.EventHandler(this.audioOptionsToolStripMenuItem_Click);
             // 
             // MainForm
             // 

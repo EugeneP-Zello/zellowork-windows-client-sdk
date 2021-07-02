@@ -47,6 +47,7 @@
             this.tbSaveMessagesPath = new System.Windows.Forms.TextBox();
             this.cbSaveMessages = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pbForwardAudio = new System.Windows.Forms.ProgressBar();
             this.lbForwardAudio = new System.Windows.Forms.Label();
             this.cbForwardAudio = new System.Windows.Forms.CheckedListBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -58,7 +59,6 @@
             this.lbSendAudio = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbEnableAI = new System.Windows.Forms.CheckBox();
-            this.pbForwardAudio = new System.Windows.Forms.ProgressBar();
             this.menu.SuspendLayout();
             this.split.Panel1.SuspendLayout();
             this.split.Panel2.SuspendLayout();
@@ -168,20 +168,16 @@
             this.comboUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboUsername.FormattingEnabled = true;
             this.comboUsername.Items.AddRange(new object[] {
-            "test1",
-            "test2",
-            "test3",
-            "test4",
-            "test5",
-            "test6",
-            "test7"});
+            "admin",
+            "disp",
+            "zukabra"});
             this.comboUsername.Location = new System.Drawing.Point(62, 56);
             this.comboUsername.MaxDropDownItems = 100;
             this.comboUsername.MaxLength = 128;
             this.comboUsername.Name = "comboUsername";
             this.comboUsername.Size = new System.Drawing.Size(180, 21);
             this.comboUsername.TabIndex = 11;
-            this.comboUsername.Text = "test3";
+            this.comboUsername.Text = "disp";
             // 
             // labelPassword
             // 
@@ -201,7 +197,7 @@
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(180, 21);
             this.textPassword.TabIndex = 12;
-            this.textPassword.Text = "test";
+            this.textPassword.Text = "123456";
             this.textPassword.UseSystemPasswordChar = true;
             // 
             // labelUsername
@@ -287,6 +283,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(355, 254);
             this.panel2.TabIndex = 3;
+            // 
+            // pbForwardAudio
+            // 
+            this.pbForwardAudio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbForwardAudio.Location = new System.Drawing.Point(63, 7);
+            this.pbForwardAudio.Name = "pbForwardAudio";
+            this.pbForwardAudio.Size = new System.Drawing.Size(285, 14);
+            this.pbForwardAudio.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.pbForwardAudio.TabIndex = 4;
+            this.pbForwardAudio.Visible = false;
             // 
             // lbForwardAudio
             // 
@@ -411,17 +418,6 @@
             this.cbEnableAI.Text = "Enable audio integration";
             this.cbEnableAI.UseVisualStyleBackColor = true;
             this.cbEnableAI.CheckedChanged += new System.EventHandler(this.cbEnableAI_CheckedChanged);
-            // 
-            // pbForwardAudio
-            // 
-            this.pbForwardAudio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbForwardAudio.Location = new System.Drawing.Point(63, 7);
-            this.pbForwardAudio.Name = "pbForwardAudio";
-            this.pbForwardAudio.Size = new System.Drawing.Size(285, 14);
-            this.pbForwardAudio.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.pbForwardAudio.TabIndex = 4;
-            this.pbForwardAudio.Visible = false;
             // 
             // MainForm
             // 

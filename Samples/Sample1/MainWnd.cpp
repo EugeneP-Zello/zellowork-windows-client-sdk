@@ -38,8 +38,8 @@ LRESULT CMainFrame::OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHan
 			m_spMesh->get_Network(&spNetwork);
 			if(spNetwork)
 			{
-				spNetwork->put_NetworkName(ATL::CComBSTR("default"));
-				spNetwork->put_LoginServer(ATL::CComBSTR("default.loudtalks.net"));
+				spNetwork->put_NetworkName(ATL::CComBSTR("zukabra"));
+				spNetwork->put_LoginServer(ATL::CComBSTR("login.zukabra.loudtalks.net"));
 			}
 			ATL::CComQIPtr<PttLib::INetwork2> spNetwork2(spNetwork);
 			if(spNetwork2)
@@ -75,15 +75,9 @@ LRESULT CMainFrame::OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHan
 		SetWindowPos(0, 0, 0, m_iMinWidth, m_iMinHeight, SWP_NOOWNERZORDER | SWP_NOZORDER | SWP_NOMOVE);
 		ManageControls();
 		ManageMenu();
-		m_dlgLogin.AddUsername(L"test1");
-		m_dlgLogin.AddUsername(L"test2");
-		m_dlgLogin.AddUsername(L"test3");
-		m_dlgLogin.AddUsername(L"test4");
-		m_dlgLogin.AddUsername(L"test5");
-		m_dlgLogin.AddUsername(L"test6");
-		m_dlgLogin.AddUsername(L"test7");
-		m_dlgLogin.SetUsername(L"test1");
-		m_dlgLogin.SetPassword(L"test");
+		m_dlgLogin.AddUsername(L"admin");
+		m_dlgLogin.AddUsername(L"disp");
+		m_dlgLogin.AddUsername(L"zukabra");
 	} else
 		DestroyWindow();
 	return 0;
